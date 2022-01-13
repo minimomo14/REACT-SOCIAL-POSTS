@@ -2,7 +2,10 @@ import React from "react";
 
 function PostForm() {
     return(
-        <div></div>
+        <div>
+            <h1>Social Posts</h1>
+            <button type="submit">New Thought</button>
+        </div>
     );
 };
 

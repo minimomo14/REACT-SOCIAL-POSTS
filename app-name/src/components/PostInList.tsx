@@ -1,8 +1,19 @@
 import React from "react";
+import Post from "../model/Post"
 
-function PostInList() {
+interface postProps {
+    posts: Post;
+}
+
+function PostInList({posts}: postProps) {
     return(
-        <div></div>
+        <div>
+            
+            <table>
+                <table>{posts.title}</table> <table>{posts.thought}</table>
+                <button type="submit">Add Thought</button>
+            </table>
+        </div>
     );
 
 };

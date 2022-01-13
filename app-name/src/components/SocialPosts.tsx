@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import Post from "../model/Post"
+import PostInList from "./PostInList";
 
-
-interface Post{
-    title: string;
-    thought:string;
-}
+// DO BOOLEAN HERE for onClose
+// const [active, setActive] = useState(false);
+// if (active) {}
 
 function SocialPosts({title,thought}: Post) {
+    const [socialPost, setSocialPost] = useState<Post[]>([
+        {title: "My brain is broke", thought: "I think REACT is broke my brain!"},
+        {title: "What ?!!!", thought: "This is make no sense ughhhhh "},
+        {title: "GIRL!!", thought: "What are you trying to do here?"}
+    ])
     return(
         <div className="SocialPosts">
-        <input type="text" name="title">Title: {title}</input>
-        <input type="text" name="thought">Thought: {thought}</input>
-        <button type="submit" name="submitBtn">Add Post</button>
+            {socialPost.map((post, i)=>
+            <PostInList key={i} posts={post} />)}
+        
         </div>
     );
 };
