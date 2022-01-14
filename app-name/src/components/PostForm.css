@@ -1,0 +1,15 @@
+.PostForm {
+    width: 50%;
+}
+
+.PostForm__Container {
+    border: 2px solid gray;
+    background: #79c5e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 15px;
+
+}

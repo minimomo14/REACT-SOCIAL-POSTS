@@ -1,7 +1,41 @@
-.SocialPosts {
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Homemade+Apple&display=swap');
+
+.SocialPosts{
     border: 1px gray;
+    background: #f3f1f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+    padding: 15px;
+}
+h1 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: bold;
+    color: #03a9f4
+}
+
+.newThought {
+    display: inline-block;
+    background-color: #03a9f4;
+    border-radius: 2px;
+    border: .5px double #f3f1f7;
+    color: #f3f1f7;
+    text-align: center;
+    width: 50%;
+    height: fit-content;
+    margin: 5px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 100px bold;
+}
+
+.SocialPosts__container {
+    font-family: 'Dosis', sans-serif;
 }
 
 .SocialPosts__posts {
     padding: 5px;
+    font-family: 'Awesome or Material Icons';
+    
 }
