@@ -1,16 +1,16 @@
 .PostInList {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #f3f1f7;
-    border-radius: 2px;
-    border: .5px double #03a9f4;
-    color: #f3f1f7;
-    text-align: center;
-    width: 150px;
-    height: fit-content;
-    margin: 5px;
-    border: 2px gray;
+    border-bottom: 2px solid #f3f1f7;
+    text-align: start;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
-
-.addPosts {
-    border: gray;
+.PostInList_container .trash-fill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 }
