@@ -15,8 +15,8 @@ function PostInList({ posts, onDelete }: postProps) {
   return (
     <div className="PostInlist">
       <section className="PostInList_container">
-        <h2>Title: {posts.title}</h2>
-        <h3>Thought: {posts.thought}</h3>
+        <h3>Title: {posts.title}</h3>
+        <h4>Thought: {posts.thought}</h4>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
