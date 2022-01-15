@@ -58,7 +58,7 @@ function PostForm({ onSubmit, onClose }: Props) {
             <label htmlFor="PostForm__thought">Thought:</label>
             <input
               id="PostForm__thought"
-              type="text"
+              type="textarea"
               value={thought}
               onChange={(e) => setThought(e.target.value)}
             />
