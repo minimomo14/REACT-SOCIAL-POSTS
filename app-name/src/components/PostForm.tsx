@@ -1,7 +1,7 @@
 import React, { FormEvent, useState } from "react";
 import Post from "../model/Post";
 import "./PostForm.css";
-import SocialPosts from "./SocialPosts";
+
 
 interface Props {
   onSubmit: (post: Post) => void;
@@ -47,8 +47,9 @@ function PostForm({ onSubmit, onClose }: Props) {
           <p>
             <label htmlFor="PostForm__title">Title:</label>
             <input
+            type="text"
+            placeholder="Title"
               id="PostForm__title"
-              type="text"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
             />
@@ -58,10 +59,12 @@ function PostForm({ onSubmit, onClose }: Props) {
             <label htmlFor="PostForm__thought">Thought:</label>
             <textarea
               id="PostForm__thought"
+              placeholder="Add your thoughts here!"
               value={thought}
               onChange={(e) => setThought(e.target.value)}
             />
           </p>
+          <br></br>
           <button type="submit">Add Post</button>
         </div>
       </form>

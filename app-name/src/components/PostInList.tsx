@@ -1,6 +1,6 @@
 import React from "react";
 import Post from "../model/Post";
-import SocialPosts from "./SocialPosts";
+
 
 interface postProps {
   posts: Post;
@@ -8,10 +8,8 @@ interface postProps {
 }
 
 function PostInList({ posts, onDelete }: postProps) {
-  const customStyle = {};
-
+ 
   // close btn needs to be close onClink
-
   return (
     <div className="PostInlist">
       <section className="PostInList_container">
